@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CBB983A2620A2C800E83472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB98392620A2C800E83472 /* AppDelegate.swift */; };
+		3CBB983C2620A2C800E83472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB983B2620A2C800E83472 /* SceneDelegate.swift */; };
+		3CBB983E2620A2C800E83472 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB983D2620A2C800E83472 /* HomeScreenViewController.swift */; };
+		3CBB98412620A2C800E83472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB983F2620A2C800E83472 /* Main.storyboard */; };
+		3CBB98462620A2C900E83472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB98442620A2C900E83472 /* LaunchScreen.storyboard */; };
+		3CBB98512620A2C900E83472 /* DinDinnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB98502620A2C900E83472 /* DinDinnTests.swift */; };
+		3CBB985C2620A2C900E83472 /* DinDinnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB985B2620A2C900E83472 /* DinDinnUITests.swift */; };
+		3CBB98CE2620A46200E83472 /* DinDinnResources.framework in Copy subprojects */ = {isa = PBXBuildFile; fileRef = 3CBB98CC2620A43800E83472 /* DinDinnResources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CBB990A2620A73D00E83472 /* DinDinnCore.framework in Copy subprojects */ = {isa = PBXBuildFile; fileRef = 3CBB99092620A73000E83472 /* DinDinnCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CBB9A712620E0C100E83472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB9A702620E0C100E83472 /* Assets.xcassets */; };
+		3CBB9B3C2621AD0E00E83472 /* AllDishesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B3B2621AD0E00E83472 /* AllDishesUseCase.swift */; };
+		3CBB9B422621AD3300E83472 /* SlidersOffersUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B412621AD3300E83472 /* SlidersOffersUsecase.swift */; };
+		3F730BFE400C666FCB9BF7F6 /* Pods_DinDinn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47274704D234B9C939484AFE /* Pods_DinDinn.framework */; };
+		6E3A4E33FBE64FCB572B6FA4 /* Pods_DinDinnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B5BD395DE8E87B1DEEC4CA /* Pods_DinDinnTests.framework */; };
+		767E903E9D0D8D8D4D032A37 /* Pods_DinDinn_DinDinnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D450793710147C1CCC38982F /* Pods_DinDinn_DinDinnUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CBB984D2620A2C900E83472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBB982E2620A2C800E83472 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CBB98352620A2C800E83472;
+			remoteInfo = DinDinn;
+		};
+		3CBB98582620A2C900E83472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBB982E2620A2C800E83472 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CBB98352620A2C800E83472;
+			remoteInfo = DinDinn;
+		};
+		3CBB98CB2620A43800E83472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBB98C72620A43800E83472 /* DinDinnResources.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CBB98B42620A37700E83472;
+			remoteInfo = DinDinnResources;
+		};
+		3CBB99082620A73000E83472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBB99042620A73000E83472 /* DinDinnCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CBB98DA2620A6A100E83472;
+			remoteInfo = DinDinnCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CBB98CD2620A44C00E83472 /* Copy subprojects */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3CBB98CE2620A46200E83472 /* DinDinnResources.framework in Copy subprojects */,
+				3CBB990A2620A73D00E83472 /* DinDinnCore.framework in Copy subprojects */,
+			);
+			name = "Copy subprojects";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3CBB98362620A2C800E83472 /* DinDinn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDinn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBB98392620A2C800E83472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CBB983B2620A2C800E83472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CBB983D2620A2C800E83472 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		3CBB98402620A2C800E83472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CBB98452620A2C900E83472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CBB98472620A2C900E83472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CBB984C2620A2C900E83472 /* DinDinnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinDinnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBB98502620A2C900E83472 /* DinDinnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnTests.swift; sourceTree = "<group>"; };
+		3CBB98522620A2C900E83472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CBB98572620A2C900E83472 /* DinDinnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinDinnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBB985B2620A2C900E83472 /* DinDinnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnUITests.swift; sourceTree = "<group>"; };
+		3CBB985D2620A2C900E83472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CBB98C72620A43800E83472 /* DinDinnResources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinDinnResources.xcodeproj; path = SubProjects/DinDinnResources/DinDinnResources.xcodeproj; sourceTree = "<group>"; };
+		3CBB99042620A73000E83472 /* DinDinnCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinDinnCore.xcodeproj; path = SubProjects/DinDinnCore/DinDinnCore.xcodeproj; sourceTree = "<group>"; };
+		3CBB9A702620E0C100E83472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CBB9B3B2621AD0E00E83472 /* AllDishesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishesUseCase.swift; sourceTree = "<group>"; };
+		3CBB9B412621AD3300E83472 /* SlidersOffersUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersOffersUsecase.swift; sourceTree = "<group>"; };
+		47274704D234B9C939484AFE /* Pods_DinDinn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5655BF3FA39C123AD18E149A /* Pods-DinDinn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinn.release.xcconfig"; path = "Target Support Files/Pods-DinDinn/Pods-DinDinn.release.xcconfig"; sourceTree = "<group>"; };
+		59B5BD395DE8E87B1DEEC4CA /* Pods_DinDinnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A9405853B5A1B2C6EFCDA63 /* Pods-DinDinnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnTests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnTests/Pods-DinDinnTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E957CF99C4C62FDA13FBB34 /* Pods-DinDinn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinn.debug.xcconfig"; path = "Target Support Files/Pods-DinDinn/Pods-DinDinn.debug.xcconfig"; sourceTree = "<group>"; };
+		87A220FDBE1FCA0733F37CD9 /* Pods-DinDinn-DinDinnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinn-DinDinnUITests.release.xcconfig"; path = "Target Support Files/Pods-DinDinn-DinDinnUITests/Pods-DinDinn-DinDinnUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90F4A28ED3BFA207A73C3275 /* Pods-DinDinnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnTests.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnTests/Pods-DinDinnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A006E5FD302DB41BCAEB62BC /* Pods-DinDinn-DinDinnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinn-DinDinnUITests.debug.xcconfig"; path = "Target Support Files/Pods-DinDinn-DinDinnUITests/Pods-DinDinn-DinDinnUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D450793710147C1CCC38982F /* Pods_DinDinn_DinDinnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinn_DinDinnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CBB98332620A2C800E83472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F730BFE400C666FCB9BF7F6 /* Pods_DinDinn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBB98492620A2C900E83472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3A4E33FBE64FCB572B6FA4 /* Pods_DinDinnTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBB98542620A2C900E83472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767E903E9D0D8D8D4D032A37 /* Pods_DinDinn_DinDinnUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CBB982D2620A2C800E83472 = {
+			isa = PBXGroup;
+			children = (
+				3CBB98C02620A42700E83472 /* SubPeojects */,
+				3CBB98382620A2C800E83472 /* DinDinn */,
+				3CBB984F2620A2C900E83472 /* DinDinnTests */,
+				3CBB985A2620A2C900E83472 /* DinDinnUITests */,
+				3CBB98372620A2C800E83472 /* Products */,
+				467259B9B5BDEF83627FDB17 /* Pods */,
+				C73802CB80BFF05C2B4DDE89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CBB98372620A2C800E83472 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB98362620A2C800E83472 /* DinDinn.app */,
+				3CBB984C2620A2C900E83472 /* DinDinnTests.xctest */,
+				3CBB98572620A2C900E83472 /* DinDinnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CBB98382620A2C800E83472 /* DinDinn */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB9B372621ACED00E83472 /* Domain */,
+				3CBB9A6F2620E08D00E83472 /* Supporting Files */,
+				3CBB9A602620C78900E83472 /* Screens */,
+				3CBB98392620A2C800E83472 /* AppDelegate.swift */,
+				3CBB983B2620A2C800E83472 /* SceneDelegate.swift */,
+				3CBB98442620A2C900E83472 /* LaunchScreen.storyboard */,
+			);
+			path = DinDinn;
+			sourceTree = "<group>";
+		};
+		3CBB984F2620A2C900E83472 /* DinDinnTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB98502620A2C900E83472 /* DinDinnTests.swift */,
+				3CBB98522620A2C900E83472 /* Info.plist */,
+			);
+			path = DinDinnTests;
+			sourceTree = "<group>";
+		};
+		3CBB985A2620A2C900E83472 /* DinDinnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB985B2620A2C900E83472 /* DinDinnUITests.swift */,
+				3CBB985D2620A2C900E83472 /* Info.plist */,
+			);
+			path = DinDinnUITests;
+			sourceTree = "<group>";
+		};
+		3CBB98C02620A42700E83472 /* SubPeojects */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB99042620A73000E83472 /* DinDinnCore.xcodeproj */,
+				3CBB98C72620A43800E83472 /* DinDinnResources.xcodeproj */,
+			);
+			name = SubPeojects;
+			sourceTree = "<group>";
+		};
+		3CBB98C82620A43800E83472 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB98CC2620A43800E83472 /* DinDinnResources.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CBB99052620A73000E83472 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB99092620A73000E83472 /* DinDinnCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CBB9A602620C78900E83472 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB9A612620C79700E83472 /* HomeScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3CBB9A612620C79700E83472 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB983D2620A2C800E83472 /* HomeScreenViewController.swift */,
+				3CBB983F2620A2C800E83472 /* Main.storyboard */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		3CBB9A6F2620E08D00E83472 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB98472620A2C900E83472 /* Info.plist */,
+				3CBB9A702620E0C100E83472 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CBB9B372621ACED00E83472 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB9B3A2621ACF400E83472 /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3CBB9B3A2621ACF400E83472 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB9B3B2621AD0E00E83472 /* AllDishesUseCase.swift */,
+				3CBB9B412621AD3300E83472 /* SlidersOffersUsecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		467259B9B5BDEF83627FDB17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E957CF99C4C62FDA13FBB34 /* Pods-DinDinn.debug.xcconfig */,
+				5655BF3FA39C123AD18E149A /* Pods-DinDinn.release.xcconfig */,
+				A006E5FD302DB41BCAEB62BC /* Pods-DinDinn-DinDinnUITests.debug.xcconfig */,
+				87A220FDBE1FCA0733F37CD9 /* Pods-DinDinn-DinDinnUITests.release.xcconfig */,
+				90F4A28ED3BFA207A73C3275 /* Pods-DinDinnTests.debug.xcconfig */,
+				7A9405853B5A1B2C6EFCDA63 /* Pods-DinDinnTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C73802CB80BFF05C2B4DDE89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47274704D234B9C939484AFE /* Pods_DinDinn.framework */,
+				D450793710147C1CCC38982F /* Pods_DinDinn_DinDinnUITests.framework */,
+				59B5BD395DE8E87B1DEEC4CA /* Pods_DinDinnTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CBB98352620A2C800E83472 /* DinDinn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CBB98602620A2C900E83472 /* Build configuration list for PBXNativeTarget "DinDinn" */;
+			buildPhases = (
+				490034F078C66BE1FDA8B226 /* [CP] Check Pods Manifest.lock */,
+				3CBB98322620A2C800E83472 /* Sources */,
+				3CBB98332620A2C800E83472 /* Frameworks */,
+				3CBB98342620A2C800E83472 /* Resources */,
+				3CBB98CD2620A44C00E83472 /* Copy subprojects */,
+				F816CC373A22D5C5E9824942 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinDinn;
+			productName = DinDinn;
+			productReference = 3CBB98362620A2C800E83472 /* DinDinn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CBB984B2620A2C900E83472 /* DinDinnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CBB98632620A2C900E83472 /* Build configuration list for PBXNativeTarget "DinDinnTests" */;
+			buildPhases = (
+				8B8B39453F0C6A24F8E61CBE /* [CP] Check Pods Manifest.lock */,
+				3CBB98482620A2C900E83472 /* Sources */,
+				3CBB98492620A2C900E83472 /* Frameworks */,
+				3CBB984A2620A2C900E83472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CBB984E2620A2C900E83472 /* PBXTargetDependency */,
+			);
+			name = DinDinnTests;
+			productName = DinDinnTests;
+			productReference = 3CBB984C2620A2C900E83472 /* DinDinnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CBB98562620A2C900E83472 /* DinDinnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CBB98662620A2C900E83472 /* Build configuration list for PBXNativeTarget "DinDinnUITests" */;
+			buildPhases = (
+				F6B8F58010F5E74B789DF6F1 /* [CP] Check Pods Manifest.lock */,
+				3CBB98532620A2C900E83472 /* Sources */,
+				3CBB98542620A2C900E83472 /* Frameworks */,
+				3CBB98552620A2C900E83472 /* Resources */,
+				1AF7FD2F411D62AAC1D0B306 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CBB98592620A2C900E83472 /* PBXTargetDependency */,
+			);
+			name = DinDinnUITests;
+			productName = DinDinnUITests;
+			productReference = 3CBB98572620A2C900E83472 /* DinDinnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CBB982E2620A2C800E83472 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3CBB98352620A2C800E83472 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3CBB984B2620A2C900E83472 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3CBB98352620A2C800E83472;
+					};
+					3CBB98562620A2C900E83472 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3CBB98352620A2C800E83472;
+					};
+				};
+			};
+			buildConfigurationList = 3CBB98312620A2C800E83472 /* Build configuration list for PBXProject "DinDinn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CBB982D2620A2C800E83472;
+			productRefGroup = 3CBB98372620A2C800E83472 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3CBB99052620A73000E83472 /* Products */;
+					ProjectRef = 3CBB99042620A73000E83472 /* DinDinnCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 3CBB98C82620A43800E83472 /* Products */;
+					ProjectRef = 3CBB98C72620A43800E83472 /* DinDinnResources.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3CBB98352620A2C800E83472 /* DinDinn */,
+				3CBB984B2620A2C900E83472 /* DinDinnTests */,
+				3CBB98562620A2C900E83472 /* DinDinnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3CBB98CC2620A43800E83472 /* DinDinnResources.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DinDinnResources.framework;
+			remoteRef = 3CBB98CB2620A43800E83472 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CBB99092620A73000E83472 /* DinDinnCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DinDinnCore.framework;
+			remoteRef = 3CBB99082620A73000E83472 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CBB98342620A2C800E83472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBB98462620A2C900E83472 /* LaunchScreen.storyboard in Resources */,
+				3CBB9A712620E0C100E83472 /* Assets.xcassets in Resources */,
+				3CBB98412620A2C800E83472 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBB984A2620A2C900E83472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBB98552620A2C900E83472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AF7FD2F411D62AAC1D0B306 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinn-DinDinnUITests/Pods-DinDinn-DinDinnUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinn-DinDinnUITests/Pods-DinDinn-DinDinnUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DinDinn-DinDinnUITests/Pods-DinDinn-DinDinnUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		490034F078C66BE1FDA8B226 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinDinn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8B39453F0C6A24F8E61CBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinDinnTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B8F58010F5E74B789DF6F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinDinn-DinDinnUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F816CC373A22D5C5E9824942 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinn/Pods-DinDinn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinn/Pods-DinDinn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DinDinn/Pods-DinDinn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CBB98322620A2C800E83472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBB983E2620A2C800E83472 /* HomeScreenViewController.swift in Sources */,
+				3CBB983A2620A2C800E83472 /* AppDelegate.swift in Sources */,
+				3CBB9B422621AD3300E83472 /* SlidersOffersUsecase.swift in Sources */,
+				3CBB983C2620A2C800E83472 /* SceneDelegate.swift in Sources */,
+				3CBB9B3C2621AD0E00E83472 /* AllDishesUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBB98482620A2C900E83472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBB98512620A2C900E83472 /* DinDinnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBB98532620A2C900E83472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBB985C2620A2C900E83472 /* DinDinnUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CBB984E2620A2C900E83472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CBB98352620A2C800E83472 /* DinDinn */;
+			targetProxy = 3CBB984D2620A2C900E83472 /* PBXContainerItemProxy */;
+		};
+		3CBB98592620A2C900E83472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CBB98352620A2C800E83472 /* DinDinn */;
+			targetProxy = 3CBB98582620A2C900E83472 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CBB983F2620A2C800E83472 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CBB98402620A2C800E83472 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CBB98442620A2C900E83472 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CBB98452620A2C900E83472 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CBB985E2620A2C900E83472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CBB985F2620A2C900E83472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CBB98612620A2C900E83472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E957CF99C4C62FDA13FBB34 /* Pods-DinDinn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DinDinn/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.DinDinn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3CBB98622620A2C900E83472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5655BF3FA39C123AD18E149A /* Pods-DinDinn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DinDinn/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.DinDinn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3CBB98642620A2C900E83472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F4A28ED3BFA207A73C3275 /* Pods-DinDinnTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.DinDinnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinDinn.app/DinDinn";
+			};
+			name = Debug;
+		};
+		3CBB98652620A2C900E83472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9405853B5A1B2C6EFCDA63 /* Pods-DinDinnTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.DinDinnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinDinn.app/DinDinn";
+			};
+			name = Release;
+		};
+		3CBB98672620A2C900E83472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A006E5FD302DB41BCAEB62BC /* Pods-DinDinn-DinDinnUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.DinDinnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DinDinn;
+			};
+			name = Debug;
+		};
+		3CBB98682620A2C900E83472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A220FDBE1FCA0733F37CD9 /* Pods-DinDinn-DinDinnUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.DinDinnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DinDinn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CBB98312620A2C800E83472 /* Build configuration list for PBXProject "DinDinn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CBB985E2620A2C900E83472 /* Debug */,
+				3CBB985F2620A2C900E83472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CBB98602620A2C900E83472 /* Build configuration list for PBXNativeTarget "DinDinn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CBB98612620A2C900E83472 /* Debug */,
+				3CBB98622620A2C900E83472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CBB98632620A2C900E83472 /* Build configuration list for PBXNativeTarget "DinDinnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CBB98642620A2C900E83472 /* Debug */,
+				3CBB98652620A2C900E83472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CBB98662620A2C900E83472 /* Build configuration list for PBXNativeTarget "DinDinnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CBB98672620A2C900E83472 /* Debug */,
+				3CBB98682620A2C900E83472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CBB982E2620A2C800E83472 /* Project object */;
+}

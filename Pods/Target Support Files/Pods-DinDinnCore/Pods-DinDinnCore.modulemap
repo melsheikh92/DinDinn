@@ -1,0 +1,6 @@
+framework module Pods_DinDinnCore {
+  umbrella header "Pods-DinDinnCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

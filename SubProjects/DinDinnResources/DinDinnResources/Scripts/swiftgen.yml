@@ -1,0 +1,10 @@
+xcassets:
+  - inputs:
+        - ./../Images/Images.xcassets
+    outputs:
+      - templatePath: ./../Images/images-template.stencil
+        output: ./../Images/Generated/DinDinImages.swift
+        params:
+            publicAccess: public
+            enumName: DinDinnImages
+            includeImages: true
