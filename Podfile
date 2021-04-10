@@ -12,6 +12,8 @@ target 'DinDinn' do
     pod 'Alamofire'
     pod 'Moya/RxSwift', '~> 14.0'
     pod 'ProgressHUD'
+    pod 'Kingfisher', '~> 6.0'
+
     
     target 'DinDinnTests' do
         inherit! :search_paths

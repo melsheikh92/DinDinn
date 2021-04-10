@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-DinDinn-DinDinnUITests/Pods-DinDinn-DinDinnUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher-framework/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/Moya-framework/Moya.framework
 ${BUILT_PRODUCTS_DIR}/ProgressHUD-framework/ProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift-framework/RxSwift.framework

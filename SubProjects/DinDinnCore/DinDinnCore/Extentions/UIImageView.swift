@@ -6,15 +6,15 @@
 //
 
 import UIKit
-//import Kingfisher
+import Kingfisher
 extension UIImageView {
     /// For simple usage without adding placeholder
     /// or handle progress or caching config
-//    public func loadFrom(urlString: String) {
-//        guard  let url = URL(string: urlString) else {
-//            return
-//        }
-//        let resource = ImageResource(downloadURL: url, cacheKey: urlString)
-//        self.kf.setImage(with: .network(resource))
-//    }
+    public func loadFrom(urlString: String) {
+        guard  let url = URL(string: urlString) else {
+            return
+        }
+        let resource = ImageResource(downloadURL: url, cacheKey: urlString)
+        self.kf.setImage(with: .network(resource))
+    }
 }
