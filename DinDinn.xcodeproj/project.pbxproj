@@ -175,6 +175,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		3C49532D26220A5900637E12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3CBB982D2620A2C800E83472 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +274,7 @@
 		3CBB9A612620C79700E83472 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				3C49532D26220A5900637E12 /* Views */,
 				3C49531F2622068000637E12 /* HomeContract.swift */,
 				3C4953202622068000637E12 /* HomePresenter.swift */,
 				3C4953212622068000637E12 /* HomeViewController.storyboard */,
