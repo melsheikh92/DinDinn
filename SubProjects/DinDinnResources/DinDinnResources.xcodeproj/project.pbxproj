@@ -20,7 +20,7 @@
 		3CBB9A4D2620C5AA00E83472 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A4C2620C5AA00E83472 /* AppStrings.swift */; };
 		3CBB9A942620EB1900E83472 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB9A932620EB1900E83472 /* Colors.xcassets */; };
 		3CBB9A992620EB2D00E83472 /* DinDinnColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A982620EB2D00E83472 /* DinDinnColors.swift */; };
-		40FE5F996004CE971C740F19 /* Pods_DinDinnResources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677CAAEBE1CEF4DF93BE30DB /* Pods_DinDinnResources.framework */; };
+		4C3F10CE287C5176EBAFD041 /* libPods-DinDinnResources.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D67802ECDEBD2FFA796E87E9 /* libPods-DinDinnResources.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		3CBB9A4C2620C5AA00E83472 /* AppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		3CBB9A932620EB1900E83472 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3CBB9A982620EB2D00E83472 /* DinDinnColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnColors.swift; sourceTree = "<group>"; };
-		677CAAEBE1CEF4DF93BE30DB /* Pods_DinDinnResources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67802ECDEBD2FFA796E87E9 /* libPods-DinDinnResources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DinDinnResources.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF99EB01B8008CF032395103 /* Pods-DinDinnResources.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnResources.release.xcconfig"; path = "Target Support Files/Pods-DinDinnResources/Pods-DinDinnResources.release.xcconfig"; sourceTree = "<group>"; };
 		F8402085E0F367AAFB420C6B /* Pods-DinDinnResources.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnResources.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnResources/Pods-DinDinnResources.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40FE5F996004CE971C740F19 /* Pods_DinDinnResources.framework in Frameworks */,
+				4C3F10CE287C5176EBAFD041 /* libPods-DinDinnResources.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 		A0899FA69ABD83EFDAC352EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				677CAAEBE1CEF4DF93BE30DB /* Pods_DinDinnResources.framework */,
+				D67802ECDEBD2FFA796E87E9 /* libPods-DinDinnResources.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

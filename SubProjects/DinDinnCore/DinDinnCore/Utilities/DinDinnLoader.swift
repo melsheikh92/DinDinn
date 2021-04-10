@@ -5,8 +5,7 @@
 //  Created by Mahmoud Elsheikh on 10/04/2021.
 //
 
-import Foundation
-import MBProgressHUD
+import ProgressHUD
 
 public protocol Loader {
     static func showLoader()
@@ -16,20 +15,16 @@ public protocol Loader {
 public final class DinDinnLoader: Loader {
     private static var loadingShown = false
     
-    static let hud: MBProgressHUD = {
-        let hud = MBProgressHUD()
-        hud.mode = .determinateHorizontalBar
-        return hud
-    }()
-    
+   
     public static func showLoader() {
         loadingShown = true
-        hud.show(animated: true)
+        ProgressHUD.animationType = .circleStrokeSpin
+        ProgressHUD.show()
     }
     
     public static func hideLoader() {
         loadingShown = false
-        hud.hide(animated: true)
+        ProgressHUD.dismiss()
     }
     
 }

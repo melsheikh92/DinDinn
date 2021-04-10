@@ -20,11 +20,13 @@
 		3CBB9B01262125FB00E83472 /* DicountDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B00262125FB00E83472 /* DicountDto.swift */; };
 		3CBB9B0726212A4F00E83472 /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B0626212A4F00E83472 /* NetworkInterceptor.swift */; };
 		3CBB9B0D2621398E00E83472 /* DinDinnLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B0C2621398E00E83472 /* DinDinnLoader.swift */; };
-		F256D61771D4C3141B10F4A6 /* Pods_DinDinnCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B04CD138C4FFB68F9F7B4FD /* Pods_DinDinnCore.framework */; };
+		3CBB9B672621BDFF00E83472 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B662621BDFF00E83472 /* BaseWireframe.swift */; };
+		3CBB9B6B2621C04100E83472 /* BaseViperProtocools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B6A2621C04100E83472 /* BaseViperProtocools.swift */; };
+		3CBB9B6F2621C56500E83472 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B6E2621C56500E83472 /* UIViewController.swift */; };
+		E1BA6B141CF2EB09D69CC91A /* libPods-DinDinnCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 887C3809823B9EF921C5A131 /* libPods-DinDinnCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B04CD138C4FFB68F9F7B4FD /* Pods_DinDinnCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C94F8A055D2AC3D2F63CBB7 /* Pods-DinDinnCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnCore.release.xcconfig"; path = "Target Support Files/Pods-DinDinnCore/Pods-DinDinnCore.release.xcconfig"; sourceTree = "<group>"; };
 		27FEA30A9B4D1679198BC4E8 /* Pods-DinDinnCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnCore.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnCore/Pods-DinDinnCore.debug.xcconfig"; sourceTree = "<group>"; };
 		3CBB98DA2620A6A100E83472 /* DinDinnCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DinDinnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +44,10 @@
 		3CBB9B00262125FB00E83472 /* DicountDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicountDto.swift; sourceTree = "<group>"; };
 		3CBB9B0626212A4F00E83472 /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
 		3CBB9B0C2621398E00E83472 /* DinDinnLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnLoader.swift; sourceTree = "<group>"; };
+		3CBB9B662621BDFF00E83472 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		3CBB9B6A2621C04100E83472 /* BaseViperProtocools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViperProtocools.swift; sourceTree = "<group>"; };
+		3CBB9B6E2621C56500E83472 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		887C3809823B9EF921C5A131 /* libPods-DinDinnCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DinDinnCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F256D61771D4C3141B10F4A6 /* Pods_DinDinnCore.framework in Frameworks */,
+				E1BA6B141CF2EB09D69CC91A /* libPods-DinDinnCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +65,7 @@
 		2231B17C8E3861B0411E29B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B04CD138C4FFB68F9F7B4FD /* Pods_DinDinnCore.framework */,
+				887C3809823B9EF921C5A131 /* libPods-DinDinnCore.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +91,7 @@
 		3CBB98DC2620A6A100E83472 /* DinDinnCore */ = {
 			isa = PBXGroup;
 			children = (
+				3CBB9B652621BDEC00E83472 /* Base */,
 				3CBB9A5C2620C75900E83472 /* Networking */,
 				3CBB9A5B2620C73B00E83472 /* Utilities */,
 				3CBB9A5A2620C73300E83472 /* Extentions */,
@@ -102,6 +109,7 @@
 				3CBB9A672620C8AF00E83472 /* View.swift */,
 				3CBB9ABE2620F32300E83472 /* UIImageView.swift */,
 				3CBB9AFC26210C5600E83472 /* CaseEnumWithDefaultFirst.swift */,
+				3CBB9B6E2621C56500E83472 /* UIViewController.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -157,6 +165,15 @@
 				3CBB9AD12621064E00E83472 /* FoodRepository.swift */,
 			);
 			path = Food;
+			sourceTree = "<group>";
+		};
+		3CBB9B652621BDEC00E83472 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB9B662621BDFF00E83472 /* BaseWireframe.swift */,
+				3CBB9B6A2621C04100E83472 /* BaseViperProtocools.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		7FF1BB0B147B18AFE57D329A /* Pods */ = {
@@ -277,15 +294,18 @@
 				3CBB9ABF2620F32300E83472 /* UIImageView.swift in Sources */,
 				3CBB9AC62620F74D00E83472 /* FoodService.swift in Sources */,
 				3CBB9A632620C80300E83472 /* Storyboard.swift in Sources */,
+				3CBB9B672621BDFF00E83472 /* BaseWireframe.swift in Sources */,
 				3CBB98F52620A6BF00E83472 /* TesClass.swift in Sources */,
 				3CBB9ACE2621063E00E83472 /* FoodDto.swift in Sources */,
 				3CBB9AFD26210C5600E83472 /* CaseEnumWithDefaultFirst.swift in Sources */,
 				3CBB9B0D2621398E00E83472 /* DinDinnLoader.swift in Sources */,
 				3CBB9B0726212A4F00E83472 /* NetworkInterceptor.swift in Sources */,
+				3CBB9B6B2621C04100E83472 /* BaseViperProtocools.swift in Sources */,
 				3CBB9AD22621064E00E83472 /* FoodRepository.swift in Sources */,
 				3CBB9A682620C8AF00E83472 /* View.swift in Sources */,
 				3CBB9B01262125FB00E83472 /* DicountDto.swift in Sources */,
 				3CBB9AFA26210A0B00E83472 /* FoodCategoryDto.swift in Sources */,
+				3CBB9B6F2621C56500E83472 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

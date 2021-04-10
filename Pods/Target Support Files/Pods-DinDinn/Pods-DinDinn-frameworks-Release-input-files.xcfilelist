@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-DinDinn/Pods-DinDinn-frameworks.sh
-${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
-${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Moya-framework/Moya.framework
+${BUILT_PRODUCTS_DIR}/ProgressHUD-framework/ProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/RxSwift-framework/RxSwift.framework
