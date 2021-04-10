@@ -11,6 +11,13 @@ import DinDinnCore
 
 class AllDishesUseCase {
     let bag = DisposeBag()
-
-    func getAllDishes() {}
+    
+    func getAllDishes(completion: @escaping (Result<[FoodItemDto], Error>) -> Void) {
+        FoodRepository().getFoodAndDrinks()
+            .subscribe(onSuccess: { result in
+                completion(.success(result))
+            }, onError: { error in
+                completion(.failure(error))
+            }).disposed(by: bag)
+    }
 }
