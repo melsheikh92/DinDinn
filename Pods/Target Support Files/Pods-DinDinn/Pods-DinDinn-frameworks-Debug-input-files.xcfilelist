@@ -3,4 +3,6 @@ ${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher-framework/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/Moya-framework/Moya.framework
 ${BUILT_PRODUCTS_DIR}/ProgressHUD-framework/ProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa-framework/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay-framework/RxRelay.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift-framework/RxSwift.framework

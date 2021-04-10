@@ -9,12 +9,12 @@ target 'DinDinn' do
     use_frameworks!
     # Comment the next line if you don't want to use dynamic frameworks
     pod "RxSwift", '~> 5.1.0'
+    pod "RxCocoa", '~> 5.1.0'
     pod 'Alamofire'
     pod 'Moya/RxSwift', '~> 14.0'
     pod 'ProgressHUD'
     pod 'Kingfisher', '~> 6.0'
 
-    
     target 'DinDinnTests' do
         inherit! :search_paths
         # Pods for testing

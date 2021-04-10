@@ -1,5 +1,5 @@
 module RxCocoa {
-  umbrella header "RxCocoa-umbrella.h"
+  umbrella header "RxCocoa-library-umbrella.h"
 
   export *
   module * { export * }

@@ -1,0 +1,39 @@
+//
+//  HomeContract.swift
+//  DinDinn
+//
+//  Created by Mahmoud Elsheikh on 10/04/2021.
+
+import UIKit
+import DinDinnCore
+
+/// The input data model for this module
+public struct HomeModuleInput {
+    public init() {}
+}
+
+/// What the module exposes for its delegate
+public protocol HomeModuleDelegate: class {}
+
+/// What the Wireframe/Router is exposing
+public protocol HomeWireframeProtocol: WireframeProtocol {
+    init(input: HomeModuleInput, delegate: HomeModuleDelegate?)
+}
+
+/// What the View is exposing
+/// Presenter -> View
+protocol HomeViewProtocol: ViewProtocol {}
+
+/// What the Presenter is exposing
+/// View -> Presenter
+protocol HomePresenterProtocol: PresenterProtocol {
+    func viewDidLoad()
+}
+
+/// What the Interactor is exposing
+/// Presenter -> Interactor
+protocol HomeInteractorProtocol: InteractorProtocol {}
+
+/// What the Interactor is outputing
+/// Interactor -> Presenter
+protocol HomeInteractorOutputProtocol: class {}

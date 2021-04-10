@@ -8,7 +8,7 @@
 import UIKit
 import DinDinnResources
 
-class HomeScreenViewController: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4953122621EE1100637E12 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953112621EE1100637E12 /* UserDefaultsWrapper.swift */; };
+		3C4953142621EE7E00637E12 /* CartDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953132621EE7E00637E12 /* CartDataWrapper.swift */; };
+		3C4953162621F46500637E12 /* CartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953152621F46500637E12 /* CartRepository.swift */; };
+		3C4953182621F62F00637E12 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953172621F62F00637E12 /* Encodable.swift */; };
 		3CBB98DF2620A6A100E83472 /* DinDinnCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBB98DD2620A6A100E83472 /* DinDinnCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CBB98F52620A6BF00E83472 /* TesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB98F42620A6BF00E83472 /* TesClass.swift */; };
 		3CBB9A632620C80300E83472 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A622620C80300E83472 /* Storyboard.swift */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		1C94F8A055D2AC3D2F63CBB7 /* Pods-DinDinnCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnCore.release.xcconfig"; path = "Target Support Files/Pods-DinDinnCore/Pods-DinDinnCore.release.xcconfig"; sourceTree = "<group>"; };
 		27FEA30A9B4D1679198BC4E8 /* Pods-DinDinnCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnCore.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnCore/Pods-DinDinnCore.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4953112621EE1100637E12 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		3C4953132621EE7E00637E12 /* CartDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDataWrapper.swift; sourceTree = "<group>"; };
+		3C4953152621F46500637E12 /* CartRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRepository.swift; sourceTree = "<group>"; };
+		3C4953172621F62F00637E12 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		3CBB98DA2620A6A100E83472 /* DinDinnCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DinDinnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBB98DD2620A6A100E83472 /* DinDinnCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinDinnCore.h; sourceTree = "<group>"; };
 		3CBB98DE2620A6A100E83472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +78,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3C49531B2622046600637E12 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				3C4953132621EE7E00637E12 /* CartDataWrapper.swift */,
+				3C4953152621F46500637E12 /* CartRepository.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		3CBB98D02620A6A100E83472 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3CBB9B652621BDEC00E83472 /* Base */,
-				3CBB9A5C2620C75900E83472 /* Networking */,
+				3CBB9A5C2620C75900E83472 /* DataLayer */,
 				3CBB9A5B2620C73B00E83472 /* Utilities */,
 				3CBB9A5A2620C73300E83472 /* Extentions */,
 				3CBB98DD2620A6A100E83472 /* DinDinnCore.h */,
@@ -110,6 +127,7 @@
 				3CBB9ABE2620F32300E83472 /* UIImageView.swift */,
 				3CBB9AFC26210C5600E83472 /* CaseEnumWithDefaultFirst.swift */,
 				3CBB9B6E2621C56500E83472 /* UIViewController.swift */,
+				3C4953172621F62F00637E12 /* Encodable.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -118,18 +136,19 @@
 			isa = PBXGroup;
 			children = (
 				3CBB9B0C2621398E00E83472 /* DinDinnLoader.swift */,
+				3C4953112621EE1100637E12 /* UserDefaultsWrapper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		3CBB9A5C2620C75900E83472 /* Networking */ = {
+		3CBB9A5C2620C75900E83472 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
 				3CBB9B0626212A4F00E83472 /* NetworkInterceptor.swift */,
 				3CBB9AF72621075F00E83472 /* Services */,
 				3CBB9ACC2621062800E83472 /* Repository */,
 			);
-			path = Networking;
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 		3CBB9AC92621029A00E83472 /* ModelDTO */ = {
@@ -145,6 +164,7 @@
 		3CBB9ACC2621062800E83472 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				3C49531B2622046600637E12 /* Cart */,
 				3CBB9AF8262107E200E83472 /* Food */,
 			);
 			path = Repository;
@@ -296,13 +316,17 @@
 				3CBB9A632620C80300E83472 /* Storyboard.swift in Sources */,
 				3CBB9B672621BDFF00E83472 /* BaseWireframe.swift in Sources */,
 				3CBB98F52620A6BF00E83472 /* TesClass.swift in Sources */,
+				3C4953142621EE7E00637E12 /* CartDataWrapper.swift in Sources */,
 				3CBB9ACE2621063E00E83472 /* FoodDto.swift in Sources */,
 				3CBB9AFD26210C5600E83472 /* CaseEnumWithDefaultFirst.swift in Sources */,
 				3CBB9B0D2621398E00E83472 /* DinDinnLoader.swift in Sources */,
+				3C4953162621F46500637E12 /* CartRepository.swift in Sources */,
 				3CBB9B0726212A4F00E83472 /* NetworkInterceptor.swift in Sources */,
 				3CBB9B6B2621C04100E83472 /* BaseViperProtocools.swift in Sources */,
 				3CBB9AD22621064E00E83472 /* FoodRepository.swift in Sources */,
 				3CBB9A682620C8AF00E83472 /* View.swift in Sources */,
+				3C4953122621EE1100637E12 /* UserDefaultsWrapper.swift in Sources */,
+				3C4953182621F62F00637E12 /* Encodable.swift in Sources */,
 				3CBB9B01262125FB00E83472 /* DicountDto.swift in Sources */,
 				3CBB9AFA26210A0B00E83472 /* FoodCategoryDto.swift in Sources */,
 				3CBB9B6F2621C56500E83472 /* UIViewController.swift in Sources */,
