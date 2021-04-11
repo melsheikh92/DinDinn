@@ -21,7 +21,7 @@ class CartRepository {
         cartDataWrapper.setData(data)
     }
     
-    public func cartStram() -> BehaviorRelay<[FoodItemDto]?> {
-        return cartDataWrapper.$cartData.rxValue
+    public func cartStream() -> Observable<[FoodItemDto]?> {
+        return cartDataWrapper.$cartData.rxValue.asObservable()
     }
 }

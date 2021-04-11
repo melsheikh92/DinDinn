@@ -10,6 +10,8 @@
 		05B6E6D9CB146208375BA515 /* Pods_DinDinnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9407D5660669EC64B32DCFD /* Pods_DinDinnTests.framework */; };
 		1143E432DC4D315147E229A2 /* Pods_DinDinn_DinDinnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EFE8D9CBF232F47ECFEAA0 /* Pods_DinDinn_DinDinnUITests.framework */; };
 		3C3453332621D7AD00B8176F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3453322621D7AD00B8176F /* Alamofire.framework */; };
+		3C48B19A262212910086D1DB /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C48B199262212910086D1DB /* SliderView.xib */; };
+		3C48B19C262212A00086D1DB /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48B19B262212A00086D1DB /* SliderView.swift */; };
 		3C4953262622068000637E12 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C49531F2622068000637E12 /* HomeContract.swift */; };
 		3C4953272622068000637E12 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953202622068000637E12 /* HomePresenter.swift */; };
 		3C4953282622068000637E12 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4953212622068000637E12 /* HomeViewController.storyboard */; };
@@ -17,6 +19,12 @@
 		3C49532A2622068000637E12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953232622068000637E12 /* HomeViewController.swift */; };
 		3C49532B2622068000637E12 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953242622068000637E12 /* HomeInteractor.swift */; };
 		3C49532C2622068000637E12 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953252622068000637E12 /* HomeWireframe.swift */; };
+		3C8931B42622A4160081E75B /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8931B32622A4160081E75B /* TabsView.swift */; };
+		3C8931B92622A8490081E75B /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8931B82622A8490081E75B /* TabCell.swift */; };
+		3C8931BC2622B1600081E75B /* DishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8931BA2622B1600081E75B /* DishTableViewCell.swift */; };
+		3C8931BD2622B1600081E75B /* DishTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8931BB2622B1600081E75B /* DishTableViewCell.xib */; };
+		3C8931C02622B2860081E75B /* CartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8931BF2622B2860081E75B /* CartButtonView.swift */; };
+		3C8931C22622B2C70081E75B /* CartButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8931C12622B2C70081E75B /* CartButtonView.xib */; };
 		3CBB983A2620A2C800E83472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB98392620A2C800E83472 /* AppDelegate.swift */; };
 		3CBB983C2620A2C800E83472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB983B2620A2C800E83472 /* SceneDelegate.swift */; };
 		3CBB983E2620A2C800E83472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB983D2620A2C800E83472 /* ViewController.swift */; };
@@ -26,7 +34,6 @@
 		3CBB985C2620A2C900E83472 /* DinDinnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB985B2620A2C900E83472 /* DinDinnUITests.swift */; };
 		3CBB98CE2620A46200E83472 /* DinDinnResources.framework in Copy subprojects */ = {isa = PBXBuildFile; fileRef = 3CBB98CC2620A43800E83472 /* DinDinnResources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CBB990A2620A73D00E83472 /* DinDinnCore.framework in Copy subprojects */ = {isa = PBXBuildFile; fileRef = 3CBB99092620A73000E83472 /* DinDinnCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3CBB9A712620E0C100E83472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB9A702620E0C100E83472 /* Assets.xcassets */; };
 		3CBB9B3C2621AD0E00E83472 /* AllDishesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B3B2621AD0E00E83472 /* AllDishesUseCase.swift */; };
 		3CBB9B422621AD3300E83472 /* SlidersOffersUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B412621AD3300E83472 /* SlidersOffersUsecase.swift */; };
 		3CBB9B472621BB0D00E83472 /* AddToCartUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B462621BB0D00E83472 /* AddToCartUsecase.swift */; };
@@ -93,6 +100,8 @@
 		2E3ED59143C6A7B006AC211C /* Pods_DinDinn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3453322621D7AD00B8176F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3453362621D7D400B8176F /* libMoya.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMoya.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C48B199262212910086D1DB /* SliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
+		3C48B19B262212A00086D1DB /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		3C49531F2622068000637E12 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 		3C4953202622068000637E12 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		3C4953212622068000637E12 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
@@ -100,6 +109,12 @@
 		3C4953232622068000637E12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3C4953242622068000637E12 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		3C4953252622068000637E12 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		3C8931B32622A4160081E75B /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		3C8931B82622A8490081E75B /* TabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
+		3C8931BA2622B1600081E75B /* DishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTableViewCell.swift; sourceTree = "<group>"; };
+		3C8931BB2622B1600081E75B /* DishTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishTableViewCell.xib; sourceTree = "<group>"; };
+		3C8931BF2622B2860081E75B /* CartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButtonView.swift; sourceTree = "<group>"; };
+		3C8931C12622B2C70081E75B /* CartButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartButtonView.xib; sourceTree = "<group>"; };
 		3CBB98362620A2C800E83472 /* DinDinn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDinn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBB98392620A2C800E83472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CBB983B2620A2C800E83472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +130,6 @@
 		3CBB985D2620A2C900E83472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CBB98C72620A43800E83472 /* DinDinnResources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinDinnResources.xcodeproj; path = SubProjects/DinDinnResources/DinDinnResources.xcodeproj; sourceTree = "<group>"; };
 		3CBB99042620A73000E83472 /* DinDinnCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DinDinnCore.xcodeproj; path = SubProjects/DinDinnCore/DinDinnCore.xcodeproj; sourceTree = "<group>"; };
-		3CBB9A702620E0C100E83472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CBB9B3B2621AD0E00E83472 /* AllDishesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishesUseCase.swift; sourceTree = "<group>"; };
 		3CBB9B412621AD3300E83472 /* SlidersOffersUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersOffersUsecase.swift; sourceTree = "<group>"; };
 		3CBB9B462621BB0D00E83472 /* AddToCartUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartUsecase.swift; sourceTree = "<group>"; };
@@ -166,16 +180,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C49531E2622064F00637E12 /* Main */ = {
+		3C48B1962622127B0086D1DB /* SliderView */ = {
+			isa = PBXGroup;
+			children = (
+				3C48B199262212910086D1DB /* SliderView.xib */,
+				3C48B19B262212A00086D1DB /* SliderView.swift */,
+			);
+			path = SliderView;
+			sourceTree = "<group>";
+		};
+		3C49531E2622064F00637E12 /* Main_NotUsed */ = {
 			isa = PBXGroup;
 			children = (
 				3CBB983D2620A2C800E83472 /* ViewController.swift */,
 				3CBB983F2620A2C800E83472 /* Main.storyboard */,
 			);
-			path = Main;
+			path = Main_NotUsed;
 			sourceTree = "<group>";
 		};
 		3C49532D26220A5900637E12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C8931BE2622B25A0081E75B /* CartButton */,
+				3C8931B2262216A00081E75B /* DishTableViewCell */,
+				3C8931AF262216930081E75B /* TabsView */,
+				3C48B1962622127B0086D1DB /* SliderView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C8931AF262216930081E75B /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				3C8931B72622A8360081E75B /* TabCell */,
+				3C8931B32622A4160081E75B /* TabsView.swift */,
+			);
+			path = TabsView;
+			sourceTree = "<group>";
+		};
+		3C8931B2262216A00081E75B /* DishTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C8931BA2622B1600081E75B /* DishTableViewCell.swift */,
+				3C8931BB2622B1600081E75B /* DishTableViewCell.xib */,
+			);
+			path = DishTableViewCell;
+			sourceTree = "<group>";
+		};
+		3C8931B72622A8360081E75B /* TabCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C8931B82622A8490081E75B /* TabCell.swift */,
+			);
+			path = TabCell;
+			sourceTree = "<group>";
+		};
+		3C8931BE2622B25A0081E75B /* CartButton */ = {
+			isa = PBXGroup;
+			children = (
+				3C8931BF2622B2860081E75B /* CartButtonView.swift */,
+				3C8931C12622B2C70081E75B /* CartButtonView.xib */,
+			);
+			path = CartButton;
+			sourceTree = "<group>";
+		};
+		3C8931D52622C0210081E75B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C4953232622068000637E12 /* HomeViewController.swift */,
+				3C4953212622068000637E12 /* HomeViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C8931D62622C0400081E75B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB9B592621BD1900E83472 /* CartViewController.swift */,
+				3CBB9B572621BD1900E83472 /* CartViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C8931D72622C0540081E75B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -264,7 +351,6 @@
 		3CBB9A602620C78900E83472 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				3C49531E2622064F00637E12 /* Main */,
 				3CBB9B542621BC4100E83472 /* CartScreen */,
 				3CBB9A612620C79700E83472 /* HomeScreen */,
 			);
@@ -274,12 +360,11 @@
 		3CBB9A612620C79700E83472 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				3C8931D52622C0210081E75B /* Controller */,
 				3C49532D26220A5900637E12 /* Views */,
 				3C49531F2622068000637E12 /* HomeContract.swift */,
 				3C4953202622068000637E12 /* HomePresenter.swift */,
-				3C4953212622068000637E12 /* HomeViewController.storyboard */,
 				3C4953222622068000637E12 /* HomeModels.swift */,
-				3C4953232622068000637E12 /* HomeViewController.swift */,
 				3C4953242622068000637E12 /* HomeInteractor.swift */,
 				3C4953252622068000637E12 /* HomeWireframe.swift */,
 			);
@@ -289,8 +374,8 @@
 		3CBB9A6F2620E08D00E83472 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C49531E2622064F00637E12 /* Main_NotUsed */,
 				3CBB98472620A2C900E83472 /* Info.plist */,
-				3CBB9A702620E0C100E83472 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -318,11 +403,11 @@
 		3CBB9B542621BC4100E83472 /* CartScreen */ = {
 			isa = PBXGroup;
 			children = (
+				3C8931D72622C0540081E75B /* Views */,
+				3C8931D62622C0400081E75B /* Controller */,
 				3CBB9B552621BD1900E83472 /* CartContract.swift */,
 				3CBB9B562621BD1900E83472 /* CartPresenter.swift */,
-				3CBB9B572621BD1900E83472 /* CartViewController.storyboard */,
 				3CBB9B582621BD1900E83472 /* CartModels.swift */,
-				3CBB9B592621BD1900E83472 /* CartViewController.swift */,
 				3CBB9B5A2621BD1900E83472 /* CartInteractor.swift */,
 				3CBB9B5B2621BD1900E83472 /* CartWireframe.swift */,
 			);
@@ -491,10 +576,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C4953282622068000637E12 /* HomeViewController.storyboard in Resources */,
+				3C48B19A262212910086D1DB /* SliderView.xib in Resources */,
+				3C8931C22622B2C70081E75B /* CartButtonView.xib in Resources */,
 				3CBB98462620A2C900E83472 /* LaunchScreen.storyboard in Resources */,
 				3CBB9B5E2621BD1900E83472 /* CartViewController.storyboard in Resources */,
-				3CBB9A712620E0C100E83472 /* Assets.xcassets in Resources */,
 				3CBB98412620A2C800E83472 /* Main.storyboard in Resources */,
+				3C8931BD2622B1600081E75B /* DishTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,15 +709,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8931C02622B2860081E75B /* CartButtonView.swift in Sources */,
 				3CBB9B5F2621BD1900E83472 /* CartModels.swift in Sources */,
 				3C49532B2622068000637E12 /* HomeInteractor.swift in Sources */,
 				3CBB983E2620A2C800E83472 /* ViewController.swift in Sources */,
 				3CBB983A2620A2C800E83472 /* AppDelegate.swift in Sources */,
+				3C8931B42622A4160081E75B /* TabsView.swift in Sources */,
 				3CBB9B472621BB0D00E83472 /* AddToCartUsecase.swift in Sources */,
 				3CBB9B602621BD1900E83472 /* CartViewController.swift in Sources */,
+				3C48B19C262212A00086D1DB /* SliderView.swift in Sources */,
 				3C49532A2622068000637E12 /* HomeViewController.swift in Sources */,
 				3C4953292622068000637E12 /* HomeModels.swift in Sources */,
 				3CBB9B422621AD3300E83472 /* SlidersOffersUsecase.swift in Sources */,
+				3C8931B92622A8490081E75B /* TabCell.swift in Sources */,
 				3CBB983C2620A2C800E83472 /* SceneDelegate.swift in Sources */,
 				3CBB9B5C2621BD1900E83472 /* CartContract.swift in Sources */,
 				3CBB9B5D2621BD1900E83472 /* CartPresenter.swift in Sources */,
@@ -640,6 +731,7 @@
 				3CBB9B612621BD1900E83472 /* CartInteractor.swift in Sources */,
 				3C4953262622068000637E12 /* HomeContract.swift in Sources */,
 				3CBB9B3C2621AD0E00E83472 /* AllDishesUseCase.swift in Sources */,
+				3C8931BC2622B1600081E75B /* DishTableViewCell.swift in Sources */,
 				3CBB9B512621BB8700E83472 /* SubscribeToCartUsecase.swift in Sources */,
 				3C4953272622068000637E12 /* HomePresenter.swift in Sources */,
 			);

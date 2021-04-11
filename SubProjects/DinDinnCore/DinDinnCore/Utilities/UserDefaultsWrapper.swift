@@ -9,9 +9,10 @@ import Foundation
 import RxSwift
 import RxCocoa
 /// Reactive UserDefaults
-////
+//// responsable for saving codable objects (decoding/encoding ) into UserDefaults
+/// using rxValue to listen to its changes
 @propertyWrapper
-public struct UserDefaultsWrapper<Value> {
+public struct UserDefaultsWrapper<Value : Codable> {
     public let key: String
     public let defaultValue: Value
     public var container: UserDefaults = .standard
@@ -21,16 +22,35 @@ public struct UserDefaultsWrapper<Value> {
 
     public var wrappedValue: Value {
         get {
-            return container.object(forKey: key) as? Value ?? defaultValue
+           let data = container.object(forKey: key)
+           return decodeValue(savedObject: data as? Data)
         }
         set {
-            container.set(newValue, forKey: key)
-            container.synchronize()
+            encodeAndSave(newValue: newValue)
             rxValue.accept(newValue)
         }
     }
     
     public func load(){
         rxValue.accept(wrappedValue)
+    }
+    
+    private func encodeAndSave(newValue: Value) {
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(wrappedValue) {
+            container.set(encoded, forKey: key)
+            container.synchronize()
+        }
+    }
+    
+    private func decodeValue(savedObject: Data?) -> Value {
+        guard let savedObject = savedObject else {
+            return defaultValue
+        }
+        let decoder = JSONDecoder()
+        if let decodedObject = try? decoder.decode(Value.self, from: savedObject) {
+            return decodedObject
+        }
+        return defaultValue
     }
 }

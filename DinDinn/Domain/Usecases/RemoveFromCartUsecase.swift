@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DinDinnCore
 
 class RemoveFromCartUsecase {
     

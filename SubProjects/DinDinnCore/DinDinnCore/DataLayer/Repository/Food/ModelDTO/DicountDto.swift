@@ -8,6 +8,6 @@
 import Foundation
 
 public struct DicountDto: Codable {
-    let id: Int
-    let image: String
+    public let id: Int
+    public let image: String
 }

@@ -8,7 +8,8 @@
 import Foundation
 import RxSwift
 import RxCocoa
-
+/// created as a wrapper in order to use the benefits of reactivity og UserDefultsWrapper
+/// to easily subscribe to userdefaults changes using rxSwift
 internal class CartDataWrapper {
     static let defaultsContainer = UserDefaults(suiteName: "dindinn.data")!
 

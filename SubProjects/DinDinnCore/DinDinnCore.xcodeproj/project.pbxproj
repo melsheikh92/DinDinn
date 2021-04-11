@@ -10,11 +10,10 @@
 		3C4953122621EE1100637E12 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953112621EE1100637E12 /* UserDefaultsWrapper.swift */; };
 		3C4953142621EE7E00637E12 /* CartDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953132621EE7E00637E12 /* CartDataWrapper.swift */; };
 		3C4953162621F46500637E12 /* CartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953152621F46500637E12 /* CartRepository.swift */; };
-		3C4953182621F62F00637E12 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953172621F62F00637E12 /* Encodable.swift */; };
 		3CBB98DF2620A6A100E83472 /* DinDinnCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBB98DD2620A6A100E83472 /* DinDinnCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CBB98F52620A6BF00E83472 /* TesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB98F42620A6BF00E83472 /* TesClass.swift */; };
 		3CBB9A632620C80300E83472 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A622620C80300E83472 /* Storyboard.swift */; };
-		3CBB9A682620C8AF00E83472 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A672620C8AF00E83472 /* View.swift */; };
+		3CBB9A682620C8AF00E83472 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A672620C8AF00E83472 /* UIView.swift */; };
 		3CBB9ABF2620F32300E83472 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9ABE2620F32300E83472 /* UIImageView.swift */; };
 		3CBB9AC62620F74D00E83472 /* FoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9AC52620F74D00E83472 /* FoodService.swift */; };
 		3CBB9ACE2621063E00E83472 /* FoodDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9ACD2621063E00E83472 /* FoodDto.swift */; };
@@ -36,13 +35,12 @@
 		3C4953112621EE1100637E12 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
 		3C4953132621EE7E00637E12 /* CartDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDataWrapper.swift; sourceTree = "<group>"; };
 		3C4953152621F46500637E12 /* CartRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRepository.swift; sourceTree = "<group>"; };
-		3C4953172621F62F00637E12 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		3CBB98DA2620A6A100E83472 /* DinDinnCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DinDinnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBB98DD2620A6A100E83472 /* DinDinnCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinDinnCore.h; sourceTree = "<group>"; };
 		3CBB98DE2620A6A100E83472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CBB98F42620A6BF00E83472 /* TesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesClass.swift; sourceTree = "<group>"; };
 		3CBB9A622620C80300E83472 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		3CBB9A672620C8AF00E83472 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3CBB9A672620C8AF00E83472 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		3CBB9ABE2620F32300E83472 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		3CBB9AC52620F74D00E83472 /* FoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodService.swift; sourceTree = "<group>"; };
 		3CBB9ACD2621063E00E83472 /* FoodDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDto.swift; sourceTree = "<group>"; };
@@ -123,11 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				3CBB9A622620C80300E83472 /* Storyboard.swift */,
-				3CBB9A672620C8AF00E83472 /* View.swift */,
+				3CBB9A672620C8AF00E83472 /* UIView.swift */,
 				3CBB9ABE2620F32300E83472 /* UIImageView.swift */,
 				3CBB9AFC26210C5600E83472 /* CaseEnumWithDefaultFirst.swift */,
 				3CBB9B6E2621C56500E83472 /* UIViewController.swift */,
-				3C4953172621F62F00637E12 /* Encodable.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -324,9 +321,8 @@
 				3CBB9B0726212A4F00E83472 /* NetworkInterceptor.swift in Sources */,
 				3CBB9B6B2621C04100E83472 /* BaseViperProtocools.swift in Sources */,
 				3CBB9AD22621064E00E83472 /* FoodRepository.swift in Sources */,
-				3CBB9A682620C8AF00E83472 /* View.swift in Sources */,
+				3CBB9A682620C8AF00E83472 /* UIView.swift in Sources */,
 				3C4953122621EE1100637E12 /* UserDefaultsWrapper.swift in Sources */,
-				3C4953182621F62F00637E12 /* Encodable.swift in Sources */,
 				3CBB9B01262125FB00E83472 /* DicountDto.swift in Sources */,
 				3CBB9AFA26210A0B00E83472 /* FoodCategoryDto.swift in Sources */,
 				3CBB9B6F2621C56500E83472 /* UIViewController.swift in Sources */,

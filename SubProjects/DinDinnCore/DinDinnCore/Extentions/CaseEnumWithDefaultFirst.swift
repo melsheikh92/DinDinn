@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/// for removing the unknown case from caseetritable enum
 protocol CaseEnumWithDefaultFirst: Codable & CaseIterable & RawRepresentable
 where Self.RawValue == String, Self.AllCases: BidirectionalCollection { }
 
