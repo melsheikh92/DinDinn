@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,21 +14,43 @@
         <scene sceneID="XJ1-QA-Nrj">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="zIc-eW-6fX" customClass="HomeViewController" customModule="DinDinn" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z2g-4m-atm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egj-dg-UZU" customClass="SliderView" customModule="DinDinn" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                                <viewLayoutGuide key="safeArea" id="QxG-PV-BS1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="MCI-Yi-LDN"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" name="captionColor"/>
+                        <constraints>
+                            <constraint firstItem="egj-dg-UZU" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="topMargin" id="CnO-92-PEh"/>
+                            <constraint firstItem="egj-dg-UZU" firstAttribute="width" secondItem="Z2g-4m-atm" secondAttribute="width" id="fRs-E9-xor"/>
+                            <constraint firstItem="egj-dg-UZU" firstAttribute="leading" secondItem="Z2g-4m-atm" secondAttribute="leading" id="tUS-bV-rqJ"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                     </view>
+                    <connections>
+                        <outlet property="sliderView" destination="egj-dg-UZU" id="ZCT-I0-y80"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="227"/>
+            <point key="canvasLocation" x="24.800000000000001" y="226.23688155922042"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="captionColor">
             <color red="0.52999997138977051" green="0.60399997234344482" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

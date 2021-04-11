@@ -77,8 +77,8 @@
 		3CBB98B62620A37700E83472 /* DinDinnResources */ = {
 			isa = PBXGroup;
 			children = (
-				3CBB9A922620EB0100E83472 /* Colors */,
 				3CBB99662620AE9E00E83472 /* Scripts */,
+				3CBB9A922620EB0100E83472 /* Colors */,
 				3CBB99652620AE0900E83472 /* Strings */,
 				3CBB99642620AE0200E83472 /* Images */,
 				3CBB98B72620A37700E83472 /* DinDinnResources.h */,

@@ -12,7 +12,7 @@ import DinDinnResources
 class CartButtonView: UIView {
     // MARK: Outlet
     
-    
+    @IBOutlet weak var contentView: UIView!
     
     // MARK: init
     override init(frame: CGRect) {
@@ -26,7 +26,10 @@ class CartButtonView: UIView {
     }
     
     private func commonInit() {
-        fromNib()
+        Bundle.main.loadNibNamed(String(describing: SliderView.self), owner: self, options: nil)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
 }
 

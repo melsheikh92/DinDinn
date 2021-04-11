@@ -6,7 +6,7 @@
 
 import UIKit
 import DinDinnCore
-import DindinnResources
+import DinDinnResources
 
 final class HomeViewController: UIViewController {
 
@@ -16,13 +16,18 @@ final class HomeViewController: UIViewController {
 
     // MARK: - Public properties -
 
+  
+    
+    @IBOutlet weak var sliderView: SliderView!
+    
+    
     // MARK: - Lifecycle -
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         presenter.viewDidLoad()
-        view.bachgroundColor = .primaryBackground
+        view.backgroundColor = .primaryBackground
     }
 
 }
