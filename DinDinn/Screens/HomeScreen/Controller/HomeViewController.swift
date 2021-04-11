@@ -6,6 +6,7 @@
 
 import UIKit
 import DinDinnCore
+import DindinnResources
 
 final class HomeViewController: UIViewController {
 
@@ -21,6 +22,7 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         presenter.viewDidLoad()
+        view.bachgroundColor = .primaryBackground
     }
 
 }
