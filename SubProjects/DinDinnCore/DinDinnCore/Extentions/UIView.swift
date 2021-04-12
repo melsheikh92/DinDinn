@@ -8,5 +8,8 @@
 import UIKit
 
 extension UIView {
-   
+    public func maskCorners(_ radius: CGFloat = 3.0, corners: CACornerMask) {
+        layer.cornerRadius = radius
+        layer.maskedCorners = corners
+    }
 }

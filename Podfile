@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
-use_modular_headers!
+#use_modular_headers!
 workspace "DinDinn"
 #use_frameworks!
 
@@ -28,7 +28,7 @@ end
 
 target 'DinDinnCore' do
     project "SubProjects/DinDinnCore/DinDinnCore.project"
-#    use_frameworks!
+    use_frameworks!
     pod "RxSwift", '~> 5.1.0'
     pod "RxCocoa", '~> 5.1.0'
     pod 'Moya/RxSwift', '~> 14.0'

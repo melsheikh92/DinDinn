@@ -8,9 +8,13 @@
 import Foundation
 
 public struct FoodItemDto: Codable {
-    let id: Int
-    let title, price, details: String
-    let gredients: String
-    let image: String
-    let type: FoodCategoryDto
+    public let id: Int
+    public let title, price, details : String
+    public let image: String
+    public var gredients: String?
+    public let type: String
+     
+    public func getCategory() -> FoodCategoryDto? {
+       return FoodCategoryDto(rawValue: type)
+    }
 }

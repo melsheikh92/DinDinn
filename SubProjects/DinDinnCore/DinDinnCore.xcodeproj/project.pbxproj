@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39663D633405157280CFDBA9 /* Pods_DinDinnCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB55A1D2E7FE835E7064C4BF /* Pods_DinDinnCore.framework */; };
+		3C191F562624ADCA00D24149 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C191F552624ADCA00D24149 /* APIError.swift */; };
+		3C32C9172624C737009168CE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C32C9162624C737009168CE /* String.swift */; };
 		3C4953122621EE1100637E12 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953112621EE1100637E12 /* UserDefaultsWrapper.swift */; };
 		3C4953142621EE7E00637E12 /* CartDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953132621EE7E00637E12 /* CartDataWrapper.swift */; };
 		3C4953162621F46500637E12 /* CartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4953152621F46500637E12 /* CartRepository.swift */; };
 		3CBB98DF2620A6A100E83472 /* DinDinnCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBB98DD2620A6A100E83472 /* DinDinnCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CBB98F52620A6BF00E83472 /* TesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB98F42620A6BF00E83472 /* TesClass.swift */; };
 		3CBB9A632620C80300E83472 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A622620C80300E83472 /* Storyboard.swift */; };
 		3CBB9A682620C8AF00E83472 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9A672620C8AF00E83472 /* UIView.swift */; };
 		3CBB9ABF2620F32300E83472 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9ABE2620F32300E83472 /* UIImageView.swift */; };
@@ -26,19 +28,19 @@
 		3CBB9B672621BDFF00E83472 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B662621BDFF00E83472 /* BaseWireframe.swift */; };
 		3CBB9B6B2621C04100E83472 /* BaseViperProtocools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B6A2621C04100E83472 /* BaseViperProtocools.swift */; };
 		3CBB9B6F2621C56500E83472 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB9B6E2621C56500E83472 /* UIViewController.swift */; };
-		E1BA6B141CF2EB09D69CC91A /* libPods-DinDinnCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 887C3809823B9EF921C5A131 /* libPods-DinDinnCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C94F8A055D2AC3D2F63CBB7 /* Pods-DinDinnCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnCore.release.xcconfig"; path = "Target Support Files/Pods-DinDinnCore/Pods-DinDinnCore.release.xcconfig"; sourceTree = "<group>"; };
 		27FEA30A9B4D1679198BC4E8 /* Pods-DinDinnCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnCore.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnCore/Pods-DinDinnCore.debug.xcconfig"; sourceTree = "<group>"; };
+		3C191F552624ADCA00D24149 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3C32C9162624C737009168CE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3C4953112621EE1100637E12 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
 		3C4953132621EE7E00637E12 /* CartDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDataWrapper.swift; sourceTree = "<group>"; };
 		3C4953152621F46500637E12 /* CartRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRepository.swift; sourceTree = "<group>"; };
 		3CBB98DA2620A6A100E83472 /* DinDinnCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DinDinnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBB98DD2620A6A100E83472 /* DinDinnCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinDinnCore.h; sourceTree = "<group>"; };
 		3CBB98DE2620A6A100E83472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CBB98F42620A6BF00E83472 /* TesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesClass.swift; sourceTree = "<group>"; };
 		3CBB9A622620C80300E83472 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		3CBB9A672620C8AF00E83472 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		3CBB9ABE2620F32300E83472 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 		3CBB9B662621BDFF00E83472 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		3CBB9B6A2621C04100E83472 /* BaseViperProtocools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViperProtocools.swift; sourceTree = "<group>"; };
 		3CBB9B6E2621C56500E83472 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		887C3809823B9EF921C5A131 /* libPods-DinDinnCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DinDinnCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB55A1D2E7FE835E7064C4BF /* Pods_DinDinnCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1BA6B141CF2EB09D69CC91A /* libPods-DinDinnCore.a in Frameworks */,
+				39663D633405157280CFDBA9 /* Pods_DinDinnCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +73,7 @@
 		2231B17C8E3861B0411E29B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				887C3809823B9EF921C5A131 /* libPods-DinDinnCore.a */,
+				BB55A1D2E7FE835E7064C4BF /* Pods_DinDinnCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,7 +114,6 @@
 				3CBB9A5A2620C73300E83472 /* Extentions */,
 				3CBB98DD2620A6A100E83472 /* DinDinnCore.h */,
 				3CBB98DE2620A6A100E83472 /* Info.plist */,
-				3CBB98F42620A6BF00E83472 /* TesClass.swift */,
 			);
 			path = DinDinnCore;
 			sourceTree = "<group>";
@@ -125,6 +126,7 @@
 				3CBB9ABE2620F32300E83472 /* UIImageView.swift */,
 				3CBB9AFC26210C5600E83472 /* CaseEnumWithDefaultFirst.swift */,
 				3CBB9B6E2621C56500E83472 /* UIViewController.swift */,
+				3C32C9162624C737009168CE /* String.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -144,6 +146,7 @@
 				3CBB9B0626212A4F00E83472 /* NetworkInterceptor.swift */,
 				3CBB9AF72621075F00E83472 /* Services */,
 				3CBB9ACC2621062800E83472 /* Repository */,
+				3C191F552624ADCA00D24149 /* APIError.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -308,11 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C32C9172624C737009168CE /* String.swift in Sources */,
 				3CBB9ABF2620F32300E83472 /* UIImageView.swift in Sources */,
 				3CBB9AC62620F74D00E83472 /* FoodService.swift in Sources */,
 				3CBB9A632620C80300E83472 /* Storyboard.swift in Sources */,
 				3CBB9B672621BDFF00E83472 /* BaseWireframe.swift in Sources */,
-				3CBB98F52620A6BF00E83472 /* TesClass.swift in Sources */,
 				3C4953142621EE7E00637E12 /* CartDataWrapper.swift in Sources */,
 				3CBB9ACE2621063E00E83472 /* FoodDto.swift in Sources */,
 				3CBB9AFD26210C5600E83472 /* CaseEnumWithDefaultFirst.swift in Sources */,
@@ -326,6 +329,7 @@
 				3CBB9B01262125FB00E83472 /* DicountDto.swift in Sources */,
 				3CBB9AFA26210A0B00E83472 /* FoodCategoryDto.swift in Sources */,
 				3CBB9B6F2621C56500E83472 /* UIViewController.swift in Sources */,
+				3C191F562624ADCA00D24149 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +392,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LIBTOOLFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -445,6 +450,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LIBTOOLFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

@@ -13,13 +13,15 @@ class SlidersOffersUsecase {
     let bag = DisposeBag()
     
     func getSlidersOffers(completion: @escaping (Result<[DicountDto], Error>) -> Void) {
-        FoodRepository().getDiscountOffers()
-            .map({ self.toUIModel(models: $0) })
-            .subscribe(onSuccess: { result in
-                completion(.success(result))
-            }, onError: { error in
-                completion(.failure(error))
-            }).disposed(by: bag)
+        FoodRepository()
+            .getDiscountOffers (completion: { (result) in
+                switch result {
+                case .success(let discounts):
+                    completion(.success(discounts))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            })
     }
     /// this method is to map to Presentation layer model if exists
     func toUIModel(models: [DicountDto]) -> [DicountDto] {

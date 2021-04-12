@@ -22,7 +22,11 @@ public protocol HomeWireframeProtocol: WireframeProtocol {
 
 /// What the View is exposing
 /// Presenter -> View
-protocol HomeViewProtocol: ViewProtocol {}
+protocol HomeViewProtocol: ViewProtocol {
+    func didReceiveDishes(dishes: [FoodItemDto])
+    func didReceiveDiscounts(discounts: [DicountDto])
+    func handleError(error: Error)
+}
 
 /// What the Presenter is exposing
 /// View -> Presenter
@@ -32,8 +36,15 @@ protocol HomePresenterProtocol: PresenterProtocol {
 
 /// What the Interactor is exposing
 /// Presenter -> Interactor
-protocol HomeInteractorProtocol: InteractorProtocol {}
+protocol HomeInteractorProtocol: InteractorProtocol {
+    func loadDiscounts()
+    func loadDishes()
+}
 
 /// What the Interactor is outputing
 /// Interactor -> Presenter
-protocol HomeInteractorOutputProtocol: class {}
+protocol HomeInteractorOutputProtocol: class {
+    func didReceiveDishes(dishes: [FoodItemDto])
+    func didReceiveDiscounts(discounts: [DicountDto])
+    func handleError(error: Error)
+}

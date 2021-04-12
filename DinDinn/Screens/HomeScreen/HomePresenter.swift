@@ -36,10 +36,23 @@ final class HomePresenter {
 // MARK: - Presenter Protocol -
 
 extension HomePresenter: HomePresenterProtocol {
-    func viewDidLoad() {}
+    func viewDidLoad() {
+        interactor.loadDishes()
+        interactor.loadDiscounts()
+    }
 }
 
 // MARK: - Interactor Output -
 
 extension HomePresenter: HomeInteractorOutputProtocol {
+    func didReceiveDishes(dishes: [FoodItemDto]) {
+        view.didReceiveDishes(dishes: dishes)
+    }
+    
+    func didReceiveDiscounts(discounts: [DicountDto]) {
+        view.didReceiveDiscounts(discounts: discounts)
+    }
+    func handleError(error: Error){
+        view.handleError(error: error)
+    }
 }

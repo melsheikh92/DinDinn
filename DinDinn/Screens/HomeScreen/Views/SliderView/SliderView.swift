@@ -12,21 +12,13 @@ import DinDinnResources
 class SliderView: UIView {
     // MARK: Outlets
     @IBOutlet var contentView: UIView!
-    @IBOutlet var overLayView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageController: UIPageControl!
     fileprivate var currentIndex: Int = 0
     private var timer: Timer!
     
     // Mark: Data
-    var items: [DicountDto]? {
-        didSet {
-            // to make sure that view has been layouted
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-                self.fillData()
-            })
-        }
-    }
+    private var dicountItems: [DicountDto] = []
     
     // MARK: init
     override init(frame: CGRect) {
@@ -38,23 +30,27 @@ class SliderView: UIView {
         super.init(coder: aDecoder)
         commonInit()
     }
-    
+    func setItems(discounts: [DicountDto]) {
+        dicountItems = discounts
+        fillData()
+    }
     private func commonInit() {
         Bundle.main.loadNibNamed(String(describing: SliderView.self), owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
-        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]        
+        scrollView.isPagingEnabled = true
     }
     
     // Mark: fill data
     func fillData() {
-        guard let items = self.items, items.count > 0 else {
+        guard dicountItems.count > 0 else {
             return
         }
         let scrollViewWidth: CGFloat = scrollView.frame.width
         let scrollViewHeight: CGFloat = scrollView.frame.height
         
-        for (index, item) in items.enumerated() {
+        for (index, item) in dicountItems.enumerated() {
             let imageView = UIImageView(frame: CGRect(x: scrollViewWidth * CGFloat(index),
                                                       y: 0,
                                                       width: scrollViewWidth,
@@ -64,11 +60,12 @@ class SliderView: UIView {
             imageView.clipsToBounds = true
             scrollView.addSubview(imageView)
         }
-        scrollView.contentSize = CGSize(width: scrollView.frame.width * CGFloat(items.count),
+        scrollView.contentSize = CGSize(width: scrollView.frame.width * CGFloat(dicountItems.count),
                                         height: scrollView.frame.height)
-        pageController.numberOfPages = items.count
+        pageController.numberOfPages = dicountItems.count
         
         setupPeriodicallySliding()
+        layoutSubviews()
     }
     
     // MARK: Actions
@@ -98,9 +95,11 @@ class SliderView: UIView {
     }
     
     func scrollToNext() {
-        guard let items = items else { return }
+        guard dicountItems.count > 0 else {
+            return
+        }
         currentIndex += 1
-        currentIndex = currentIndex < items.count ? currentIndex : 0
+        currentIndex = currentIndex < dicountItems.count ? currentIndex : 0
         scrollToIndex(index: currentIndex)
     }
 }
@@ -108,8 +107,8 @@ class SliderView: UIView {
 // MARK: UIScrollViewDelegate
 extension SliderView: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-            let pageWidth:CGFloat = self.scrollView.frame.width
-            let currentPage:CGFloat = floor((scrollView.contentOffset.x - (pageWidth / 2)) / pageWidth) + 1
-            self.pageController.currentPage = Int(currentPage)
+        let pageWidth:CGFloat = self.scrollView.frame.width
+        let currentPage:CGFloat = floor((scrollView.contentOffset.x - (pageWidth / 2)) / pageWidth) + 1
+        self.pageController.currentPage = Int(currentPage)
     }
 }

@@ -1,8 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-DinDinn/Pods-DinDinn-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/Kingfisher-framework/Kingfisher.framework
-${BUILT_PRODUCTS_DIR}/Moya-framework/Moya.framework
-${BUILT_PRODUCTS_DIR}/ProgressHUD-framework/ProgressHUD.framework
-${BUILT_PRODUCTS_DIR}/RxCocoa-framework/RxCocoa.framework
-${BUILT_PRODUCTS_DIR}/RxRelay-framework/RxRelay.framework
-${BUILT_PRODUCTS_DIR}/RxSwift-framework/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
+${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

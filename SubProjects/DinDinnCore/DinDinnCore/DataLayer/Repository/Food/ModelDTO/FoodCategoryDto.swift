@@ -13,7 +13,7 @@ public enum FoodCategoryDto: String, Codable, CaseIterable, CaseEnumWithDefaultF
     case sushi  = "SUSHI"
     case drinks = "DRINKS"
     
-    static func casesArray() -> [FoodCategoryDto] {
+    public static func casesArray() -> [FoodCategoryDto] {
         var cases = FoodCategoryDto.allCases
         cases.removeFirst()
         return cases
