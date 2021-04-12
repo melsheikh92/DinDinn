@@ -44,22 +44,18 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
-        
-        // setupBackgrounds
-        sliderView.backgroundColor    = .red
-        // temp
-        menuView.backgroundColor = .clear
-        menuTableView.backgroundColor = .clear
         // corners at top of menu
-        menuView.maskCorners(15, corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner])
-        menuView.layer.cornerRadius  = 15
+        menuView.maskCorners(25, corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner])
+        menuView.layer.cornerRadius  = 25
         menuView.layer.masksToBounds = true
         
-        tabsView.maskCorners(15, corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner])
-        tabsView.layer.cornerRadius  = 15
+        tabsView.maskCorners(25, corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner])
+        tabsView.layer.cornerRadius  = 25
         tabsView.layer.masksToBounds = true
         tabsView.backgroundColor = .white
-        view.backgroundColor = .white
+        menuTableView.backgroundColor = .white
+        
+        menuView.addShadow(offsetX: 0, offsetY: 2)
         
         self.sections = FoodCategoryDto.casesArray()
         tabsView.items = sections.map({ $0.rawValue.capitalized })
