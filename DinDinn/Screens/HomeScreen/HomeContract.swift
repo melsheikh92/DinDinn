@@ -32,6 +32,7 @@ protocol HomeViewProtocol: ViewProtocol {
 /// View -> Presenter
 protocol HomePresenterProtocol: PresenterProtocol {
     func viewDidLoad()
+    func gotToCheckout(with: [FoodItemDto])
 }
 
 /// What the Interactor is exposing

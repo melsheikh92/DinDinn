@@ -15,7 +15,7 @@ public final class CartWireframe: BaseWireframe {
     
     // MARK: - Module setup -
     
-    public init(input: CartModuleInput = .init(),
+    public init(input: CartModuleInput,
                 delegate: CartModuleDelegate? = nil) {
         let moduleViewController = CartViewController.create()
         super.init(viewController: moduleViewController)

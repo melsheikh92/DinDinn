@@ -21,6 +21,11 @@ final class HomeViewController: UIViewController {
     var currentSection: FoodCategoryDto = .pizza
     var previousSection: FoodCategoryDto?
     
+    var cart = BehaviorRelay<[FoodItemDto]>(value: [])
+    
+    // MARK: - Outlets
+    @IBOutlet weak var cartLabelBackgroundImage: UIImageView!
+    @IBOutlet weak var cartIconBackground: UIImageView!
     @IBOutlet weak var menuTableView: UITableView! {
         didSet {
             menuTableView.register(DishItemCell.nib, forCellReuseIdentifier: DishItemCell.identifier)
@@ -32,12 +37,15 @@ final class HomeViewController: UIViewController {
             menuTableView.dataSource = self
         }
     }
-    
     @IBOutlet weak var tabsView: TabsView!
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var sliderView: SliderView!
     @IBOutlet weak var menuTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var sliderHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var cartButtonView: UIView!
+    @IBOutlet weak var cartImageView: UIImageView!
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var cartButton: UIButton!
     
     // MARK: - Lifecycle -
     
@@ -56,7 +64,20 @@ final class HomeViewController: UIViewController {
         menuTableView.backgroundColor = .white
         
         menuView.addShadow(offsetX: 0, offsetY: 2)
+         // setup cart button images label and views
+        cartButtonView.backgroundColor = .clear
+        cartImageView.image = DinDinnImages.cart.image
+        countLabel.textColor = .secondaryText
+        countLabel.font = .systemFont(ofSize: 8)
+        cartIconBackground.image = DinDinnImages.circle.image
+        cartLabelBackgroundImage.image = DinDinnImages.circle.image
+        cartIconBackground.contentMode = .scaleAspectFill
+        cartLabelBackgroundImage.contentMode = .scaleAspectFill
+        cartIconBackground.tintColor = .accentColor
         
+        cartLabelBackgroundImage.tintColor = .primaryBackground
+        
+        /// setup tabs
         self.sections = FoodCategoryDto.casesArray()
         tabsView.items = sections.map({ $0.rawValue.capitalized })
         tabsView.didSelectTab = { value in
@@ -69,7 +90,7 @@ final class HomeViewController: UIViewController {
             self.updateViewForContentOfsetChanges()
         }.disposed(by: disposeBag)
         
-        
+        /// swipe gestures
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
@@ -78,8 +99,28 @@ final class HomeViewController: UIViewController {
         swipeleft.direction = .left
         
         self.view.addGestureRecognizer(swipeleft)
+        
+        /// cart listners
+        cart.subscribe { (event) in
+            self.serupCartButton(with: event.element ?? [])
+        }.disposed(by: disposeBag)
+        cartButton.rx.controlEvent(UIControl.Event.touchDown).subscribe { [weak self] (_) in
+            self?.goToCheckout()
+        }.disposed(by: disposeBag)
+        
     }
-    
+    func goToCheckout() {
+        self.presenter.gotToCheckout(with: cart.value)
+    }
+    func serupCartButton(with value: [FoodItemDto] ){
+        if value.isEmpty {
+            cartButton.isEnabled = false
+            countLabel.text = "0"
+        } else {
+            cartButton.isEnabled = true
+            countLabel.text = "\(value.count)"
+        }
+    }
     func goToNextPage() {
         guard let idx = sections.firstIndex(where: { $0 == currentSection}), idx + 1 < sections.count else {
             return
@@ -173,6 +214,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let dish = dishes.filter({ $0.getCategory() == currentSection })[indexPath.row]
         cell.item = dish
         cell.viewHolder.backgroundColor = .primaryBackground
+        
+        cell.buyButton.rx.controlEvent([.touchDown]).subscribe { (event) in
+            var newCurrentCart = self.cart.value
+            newCurrentCart.append(dish)
+            self.cart.accept(newCurrentCart)
+        }.disposed(by: self.disposeBag)
+        
         return cell
     }
     

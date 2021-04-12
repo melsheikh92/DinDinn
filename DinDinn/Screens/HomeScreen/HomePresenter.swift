@@ -8,20 +8,20 @@ import Foundation
 import DinDinnCore
 
 final class HomePresenter {
-
+    
     // MARK: - Private properties -
-
+    
     private unowned let view: HomeViewProtocol
     private let interactor: HomeInteractorProtocol
     private let wireframe: HomeWireframeProtocol
     private let input: HomeModuleInput
-
+    
     // MARK: - Public properties -
     
     public weak var delegate: HomeModuleDelegate?
-
+    
     // MARK: - Lifecycle -
-
+    
     init(view: HomeViewProtocol,
          interactor: HomeInteractorProtocol,
          wireframe: HomeWireframeProtocol,
@@ -39,6 +39,12 @@ extension HomePresenter: HomePresenterProtocol {
     func viewDidLoad() {
         interactor.loadDishes()
         interactor.loadDiscounts()
+    }
+    
+    func gotToCheckout(with value: [FoodItemDto]) {
+        let cartWireFrame = CartWireframe(input: CartModuleInput(cartItems: value))
+        cartWireFrame.viewController.modalPresentationStyle = .fullScreen
+        wireframe.presentChildWireframe(cartWireFrame, animated: true, completion: nil)
     }
 }
 

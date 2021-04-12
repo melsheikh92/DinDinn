@@ -16,6 +16,8 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum DinDinnImages {
+  public static let cart = ImageAsset(name: "cart")
+  public static let circle = ImageAsset(name: "circle")
   public static let logo = ImageAsset(name: "logo")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

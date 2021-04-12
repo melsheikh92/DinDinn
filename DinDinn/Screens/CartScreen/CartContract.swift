@@ -9,7 +9,10 @@ import DinDinnCore
 
 /// The input data model for this module
 public struct CartModuleInput {
-    public init() {}
+    let cartItems: [FoodItemDto]
+    public init(cartItems: [FoodItemDto]) {
+        self.cartItems = cartItems
+    }
 }
 
 /// What the module exposes for its delegate
