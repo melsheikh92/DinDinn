@@ -40,6 +40,8 @@ class SliderView: UIView {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]        
         scrollView.isPagingEnabled = true
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: scrollView.frame.size.height);
+
     }
     
     // Mark: fill data
