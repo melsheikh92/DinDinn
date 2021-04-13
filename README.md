@@ -19,11 +19,11 @@ easily(from customized templates and scripts) I can get generated image or Strin
 // using generated strings file
  imageView.image = DinDinnImages.logo.image
 ```
-##### 1- DinDinn core-bundle
+##### 2- DinDinn core-bundle
 contains the commonly used extensions and data layer.
 data layer includes the API calls, Repository, and models.
 
-##### 1- DinDinn main bundle
+##### 3- DinDinn main bundle
 contains the Domain and presentation layers.
 The domain layer includes the use cases.
 
