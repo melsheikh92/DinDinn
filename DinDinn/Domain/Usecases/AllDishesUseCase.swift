@@ -6,11 +6,9 @@
 //
 
 import Foundation
-import RxSwift
 import DinDinnCore
 
 class AllDishesUseCase {
-    let bag = DisposeBag()
     
     func getAllDishes(completion: @escaping (Result<[FoodItemDto], Error>) -> Void) {
         FoodRepository()

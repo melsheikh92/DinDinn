@@ -6,11 +6,9 @@
 //
 
 import Foundation
-import RxSwift
 import DinDinnCore
 
 class SlidersOffersUsecase {
-    let bag = DisposeBag()
     
     func getSlidersOffers(completion: @escaping (Result<[DicountDto], Error>) -> Void) {
         FoodRepository()
