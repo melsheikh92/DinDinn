@@ -34,3 +34,9 @@ The presentation layer is built on VIPER design pattern while the navigation is 
 ![grab-landing-page](https://github.com/melsheikh92/DinDinn/blob/master/sample.gif)
 
 
+### TODO
+
+- [ ]  Finish cart use cases
+- [ ]  Property wrapper DI
+- [ ]  SwiftUI
+- [ ]  Fastlane and jenkins
