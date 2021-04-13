@@ -29,6 +29,6 @@ The domain layer includes the use cases.
 
 The presentation layer is built on VIPER design pattern while the navigation is being handled by the Wireframe concept. [Reference](https://m.oursky.com/viper-ios-app-beyond-mvc-mega-viewcontroller-e2b625ac58d5)
 
-![grab-landing-page](https://https://github.com/melsheikh92/DinDinn/sample.gif)
+![grab-landing-page](https://github.com/melsheikh92/DinDinn/blob/master/sample.gif)
 
 
