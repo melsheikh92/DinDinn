@@ -30,7 +30,7 @@ final class CartViewController: UIViewController {
     @IBOutlet weak var tabsView: TabsView!
     @IBOutlet weak var tableView: UITableView! {
         didSet{
-            tableView.register(DishItemCell.nib, forCellReuseIdentifier: DishItemCell.identifier)
+            tableView.register(CartCell.nib, forCellReuseIdentifier: CartCell.identifier)
             tableView.separatorStyle = .none
             tableView.allowsMultipleSelection = false
             tableView.allowsSelection = false
@@ -72,8 +72,8 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
-                withIdentifier: DishItemCell.identifier,
-                for: indexPath) as? DishItemCell
+                withIdentifier: CartCell.identifier,
+                for: indexPath) as? CartCell
         else {
             return UITableViewCell()
         }
@@ -86,7 +86,6 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 350
+        return 120
     }
-    
 }

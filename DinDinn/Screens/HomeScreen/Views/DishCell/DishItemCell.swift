@@ -17,8 +17,8 @@ class DishItemCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var viewHolder: UIView!
     @IBOutlet weak var imageHolder: UIImageView!
-    @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var detailsLabel: UILabel!
     
     var addToCart: ((FoodItemDto)-> Void)?
     var item: FoodItemDto? {

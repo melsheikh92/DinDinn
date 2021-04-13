@@ -134,6 +134,7 @@
                         <outlet property="menuTopConstraint" destination="631-aM-ooV" id="2Cq-4R-adn"/>
                         <outlet property="menuView" destination="ido-ja-kGb" id="ObY-3W-3gj"/>
                         <outlet property="sliderHeightConstraint" destination="4zP-v5-PFX" id="WWk-rG-32p"/>
+                        <outlet property="sliderTopConstraint" destination="CnO-92-PEh" id="pD1-gq-zqB"/>
                         <outlet property="sliderView" destination="egj-dg-UZU" id="ZCT-I0-y80"/>
                         <outlet property="tabsView" destination="zwt-Mx-gyl" id="BNq-z9-bWM"/>
                     </connections>

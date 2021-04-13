@@ -40,6 +40,7 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var tabsView: TabsView!
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var sliderView: SliderView!
+    @IBOutlet weak var sliderTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var menuTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var sliderHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var cartButtonView: UIView!
@@ -156,9 +157,12 @@ final class HomeViewController: UIViewController {
     
     func updateViewForContentOfsetChanges() {
         let value = menuTableView.contentOffset.y
+        let maxSliderTopY = (-1 * sliderHeightConstraint.constant) + 30
         
-        if ((sliderHeightConstraint.constant > 30 && value > 0) || ( sliderHeightConstraint.constant >= 30 && value < 0 && sliderHeightConstraint.constant < 440)) {
-            sliderHeightConstraint.constant = (sliderHeightConstraint.constant - value) < 30 ? 30 : sliderHeightConstraint.constant - value
+        let isInUpdatingRange = (sliderTopConstraint.constant - value) >= maxSliderTopY &&  (sliderTopConstraint.constant - value) <= 0
+        
+        if (isInUpdatingRange) {
+            sliderTopConstraint.constant = (sliderTopConstraint.constant - value) < maxSliderTopY ? maxSliderTopY : sliderTopConstraint.constant - value
             menuTopConstraint.constant = (menuTopConstraint.constant - value) < 30 ? 30 : menuTopConstraint.constant - value
         }
     }

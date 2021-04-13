@@ -20,6 +20,7 @@ public enum DinDinnImages {
   public static let cart = ImageAsset(name: "cart")
   public static let circle = ImageAsset(name: "circle")
   public static let logo = ImageAsset(name: "logo")
+  public static let remove = ImageAsset(name: "remove")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
