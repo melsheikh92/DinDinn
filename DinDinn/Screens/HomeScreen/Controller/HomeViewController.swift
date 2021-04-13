@@ -86,7 +86,7 @@ final class HomeViewController: UIViewController {
             self.currentSection = self.sections[value]
             self.rerenderTableView()
         }
-        menuTableView.rx.contentOffset.throttle(0.05, scheduler: MainScheduler.instance).subscribe {
+        menuTableView.rx.contentOffset.throttle(0.01, scheduler: MainScheduler.instance).subscribe {
             print("offset now \($0.element)")
             self.updateViewForContentOfsetChanges()
         }.disposed(by: disposeBag)
