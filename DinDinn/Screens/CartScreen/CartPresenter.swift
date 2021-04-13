@@ -37,6 +37,11 @@ final class CartPresenter {
 
 extension CartPresenter: CartPresenterProtocol {
     func viewDidLoad() {}
+    var dishes: [FoodItemDto] {
+        get {
+            return input.cartItems
+        }
+    }
 }
 
 // MARK: - Interactor Output -

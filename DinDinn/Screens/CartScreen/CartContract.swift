@@ -31,6 +31,7 @@ protocol CartViewProtocol: ViewProtocol {}
 /// View -> Presenter
 protocol CartPresenterProtocol: PresenterProtocol {
     func viewDidLoad()
+    var dishes: [FoodItemDto] { get }
 }
 
 /// What the Interactor is exposing

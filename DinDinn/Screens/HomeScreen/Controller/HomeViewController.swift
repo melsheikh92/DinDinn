@@ -228,4 +228,3 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 350
     }
 }
-

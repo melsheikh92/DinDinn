@@ -8,3 +8,7 @@
 
 
 "app_name" = "DinDinn";
+"cart"="Cart";
+"order"="Orders";
+"invoices"="Invoices";
+"Menu" = "Menu";

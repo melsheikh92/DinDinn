@@ -15,6 +15,22 @@ public enum AppStrings {
     public static var appName: String {
         return AppStrings.tr("Strings", "app_name")
     }
+    /* Cart */
+    public static var cart: String {
+        return AppStrings.tr("Strings", "cart")
+    }
+    /* Invoices */
+    public static var invoices: String {
+        return AppStrings.tr("Strings", "invoices")
+    }
+    /* Menu */
+    public static var menu: String {
+        return AppStrings.tr("Strings", "Menu")
+    }
+    /* Orders */
+    public static var order: String {
+        return AppStrings.tr("Strings", "order")
+    }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name
